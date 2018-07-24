@@ -291,7 +291,7 @@ public class Controller {
         Stage pStage = (Stage) mainField.getScene().getWindow();
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/main.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
