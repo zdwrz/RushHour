@@ -12,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Line;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import sample.game.GameEngine;
@@ -61,19 +62,19 @@ public class Controller {
             dialog.setResult((new Random().nextInt(game.getGames().size())));
             dialog.close();
         });
-        for (int i = 0; i < game.getGames().size();i++) {
+        for (int i = 1; i <= game.getGames().size();i++) {
             Button btn = new Button();
             btn.setText("Jam " + i);
             btn.setUserData(i);
             btn.setOnMouseClicked(e->{
                 if( e.getTarget() instanceof Button) {
-                    dialog.setResult((Integer) ((Button) (e.getTarget())).getUserData());
+                    dialog.setResult((Integer) ((Button) (e.getTarget())).getUserData() - 1);
                 }else{
-                    dialog.setResult((Integer) ((Button)(((LabeledText) (e.getTarget())).getParent())).getUserData());
+                    dialog.setResult((Integer) ((Button)(((Text) (e.getTarget())).getParent())).getUserData() - 1);
                 }
                 dialog.close();
             });
-            btnGrid.add(btn,i % 5, i / 5);
+            btnGrid.add(btn,(i-1) % 5 , (i-1) / 5);
         }
         dialog.getDialogPane().setContent(dialogPane);
         Optional<Integer> result = dialog.showAndWait();

@@ -19,7 +19,7 @@
     <content>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="480.0">
          <children>
-            <GridPane fx:id="buttonGridPane" alignment="CENTER" prefHeight="268.0" prefWidth="480.0">
+            <GridPane fx:id="buttonGridPane" alignment="CENTER" prefHeight="298.0" prefWidth="480.0">
               <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -28,11 +28,14 @@
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
               </rowConstraints>
             </GridPane>
          </children></AnchorPane>
