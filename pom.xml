@@ -10,6 +10,7 @@
     <name>RushHour</name>
 
     <build>
+        <finalName>RushHour</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

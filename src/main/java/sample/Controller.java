@@ -2,6 +2,7 @@ package sample;
 
 import com.sun.javafx.scene.control.skin.LabeledText;
 import javafx.animation.TranslateTransition;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -62,6 +63,11 @@ public class Controller {
             dialog.setResult((new Random().nextInt(game.getGames().size())));
             dialog.close();
         });
+        Button quitBtn = (Button)dialogPane.lookup("#quitBtn");
+        quitBtn.setOnMouseClicked(e->{
+            dialog.setResult(0);
+            dialog.close();
+        });
         for (int i = 1; i <= game.getGames().size();i++) {
             Button btn = new Button();
             btn.setText("Jam " + i);
@@ -82,6 +88,10 @@ public class Controller {
     }
 
     private void prepareGame(Integer i) {
+        if (i <= 0) {
+            Platform.exit();
+            System.exit(0);
+        }
         prepareGame(game.getGames().get(i));
     }
 

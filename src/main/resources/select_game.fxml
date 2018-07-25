@@ -14,6 +14,7 @@
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="158.0" layoutY="20.0" prefHeight="30.0" prefWidth="147.0" text="Choose a Game" />
             <Button fx:id="randomBtn" layoutX="333.0" layoutY="22.0" mnemonicParsing="false" text="Random Game" />
+            <Button fx:id="quitBtn" cancelButton="true" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" text="Quit" />
          </children></AnchorPane>
     </header>
     <content>
